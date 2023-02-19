@@ -29,6 +29,9 @@ public class Player_Movement : MonoBehaviour
     
     void Update()
     {
-        
+        vermove = joystick.Vertical + runspeedver;
+        hormove = joystick.Horizontal + runspeedhor;
+
+        transform.position = new Vector3(hormove, vermove, 0) * Time.deltaTime * runspeed;
     }
 }
