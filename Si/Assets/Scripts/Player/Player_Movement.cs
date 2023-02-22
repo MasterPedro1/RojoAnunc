@@ -1,37 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using EasyJoystick;
 
 
 public class Player_Movement : MonoBehaviour
 {
+    [SerializeField] private float speed;
+    [SerializeField] private Joystick joystick;
+    [SerializeField] private Rigidbody2D rb;
 
-    float hormove = 0;
-
-    float vermove = 0;
-
-    public float runspeedhor = 3;
-
-    public float runspeedver = 3;
-
-    public float runspeed = 0;
-
-    Rigidbody2D rb2d;
-
-    public Joystick joystick;
-
-    void Start()
+    private void Update()
     {
-        rb2d= GetComponent<Rigidbody2D>();
+       /* float xMove = joystick.Horizontal();
+        float yMove = joystick.Vertical();
+
+        rb.position = new Vector2(xMove, yMove) * speed * Time.deltaTime;*/
+
     }
 
-    
-    void Update()
-    {
-        vermove = joystick.Vertical + runspeedver;
-        hormove = joystick.Horizontal + runspeedhor;
-
-        transform.position = new Vector3(hormove, vermove, 0) * Time.deltaTime * runspeed;
-    }
 }
