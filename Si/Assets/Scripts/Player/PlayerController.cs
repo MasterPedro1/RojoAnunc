@@ -4,27 +4,44 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    bool isLeft = false;
+    bool isRight = false;
 
-    public float moveSpeed;
-    public float jumpForce;
-    public Transform groundCheck;
-    public LayerMask whatIsGround;
-    // Start is called before the first frame update
-    void Start()
+    public Rigidbody2D rb;
+    public float speed;
+
+
+
+    public void clickLeft()
     {
-        
+        isLeft = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void releaseLeft()
     {
-        float move = Input.GetAxis("Horizontal");
+        isLeft = false;
+    }
 
-        GetComponent<Rigidbody2D>().velocity = new Vector2(move * moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+    public void clickRight()
+    {
+        isRight = true;
+    }
 
-        if (Input.GetKeyDown(KeyCode.Space) && Physics2D.OverlapCircle(groundCheck.position, 0.1f, whatIsGround))
+    public void releaseRight()
+    {
+        isRight = false;
+    }
+
+    private void FixedUpdate()
+    {
+        if (isLeft)
         {
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            rb.transform.position = new Vector2(-speed, 0) * Time.deltaTime;
+        }
+
+        if (isRight)
+        {
+            rb.transform.position = new Vector2(speed, 0) * Time.deltaTime;
         }
     }
 }
