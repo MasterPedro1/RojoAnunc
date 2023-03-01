@@ -13,6 +13,13 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float jump;
 
+    public Animator animator;
+
+    private void Start()
+    {
+
+        animator = GetComponent<Animator>();
+    }
 
 
     public void clickLeft()
@@ -52,6 +59,8 @@ public class PlayerController : MonoBehaviour
         {
             rb.AddForce(new Vector3(0, jump, 0) * Time.deltaTime);
         }
+       
+       
     }
     private void FixedUpdate()
     {
@@ -61,6 +70,7 @@ public class PlayerController : MonoBehaviour
         {
             //rb.AddForce(new Vector2(-speed, 0) * Time.deltaTime);
             rb.transform.position += new Vector3(-speed, 0, 0) * Time.deltaTime;
+            animator.SetBool("Horizontal", isLeft == true);
         }
 
         if (isRight)
