@@ -15,10 +15,16 @@ public class PlayerController : MonoBehaviour
 
     public Animator animator;
 
+    public PlayerStates state;
+
+    public string run, idle, jump2;
+    [SerializeField]private SpriteRenderer sp;
+
     private void Start()
     {
 
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
+        //sp= GetComponent<SpriteRenderer>();
     }
 
 
@@ -58,33 +64,47 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             rb.AddForce(new Vector3(0, jump, 0) * Time.deltaTime);
+           
         }
        
-       
+
     }
     private void FixedUpdate()
     {
-        
+        if (isLeft == false && isRight == false && isUp == false)
+            animator.Play(idle);
 
         if (isLeft)
         {
             //rb.AddForce(new Vector2(-speed, 0) * Time.deltaTime);
             rb.transform.position += new Vector3(-speed, 0, 0) * Time.deltaTime;
-            animator.SetBool("Horizontal", isLeft == true);
+            animator.Play(run);
+            sp.flipX = true;
+
         }
 
         if (isRight)
         {
             //rb.AddForce(new Vector2(speed, 0) * Time.deltaTime);
             rb.transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
+            animator.Play(run);
+            sp.flipX = false;
         }
 
         if (isUp)
         {
             //rb.AddForce(new Vector2(speed, 0) * Time.deltaTime);
             rb.transform.position += new Vector3(0, speed * 2f, 0) * Time.deltaTime;
+            animator.Play(jump2);
         }
 
+    }
+
+    
+
+    public enum PlayerStates
+    {
+        Idle, Running, jump, attack
     }
 
 
