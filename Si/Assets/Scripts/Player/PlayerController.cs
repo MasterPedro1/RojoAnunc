@@ -5,19 +5,19 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    bool isLeft = false;
-    bool isRight = false;
-    bool isUp = false;
+    public bool isLeft = false;
+    public bool isRight = false;
+    public bool isUp = false;
 
     public Rigidbody2D rb;
     public float speed;
     public float jump;
 
     public Animator animator;
+    public Health health;
 
-    public PlayerStates state;
-
-    public string run, idle, jump2;
+   
+    public string run, idle, jump2, hurt;
     [SerializeField]private SpriteRenderer sp;
 
     private void Start()
@@ -98,15 +98,19 @@ public class PlayerController : MonoBehaviour
             animator.Play(jump2);
         }
 
+       
+
     }
 
-    
 
-    public enum PlayerStates
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Idle, Running, jump, attack
+        if(collision.CompareTag("Enemy"))
+        {
+            animator.Play(hurt);
+        }
     }
 
 
-   
+
 }

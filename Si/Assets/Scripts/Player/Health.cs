@@ -6,14 +6,28 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     public Rigidbody2D rb;
-    private void OnCollisionEnter2D(Collision2D collision)
+    public float push;
+    public PlayerController player;
+    [SerializeField] private SpriteRenderer sp;
+    public bool IsHurt = false;
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-
-        if (collision.collider.CompareTag("Enemy"))
+        if (collision.CompareTag("Enemy"))
         {
-            rb.AddForce(new Vector2(1, 1) * Time.deltaTime);
-        }
+           
+            
+            if (player.isLeft == true)
+            {
+                GetComponent<Rigidbody2D>().AddForce(Vector3.right * push);
+                Debug.Log("Left");
+            }
 
+            if (player.isRight == true)
+            {
+                GetComponent<Rigidbody2D>().AddForce(Vector3.left * push);
+                Debug.Log("Contacto");
+            }
+        }
     }
 }
