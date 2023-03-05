@@ -2,29 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
+
+    [Header("Player")]
     public bool isLeft = false;
     public bool isRight = false;
     public bool isUp = false;
+    public bool isAttack = false;
 
     public Rigidbody2D rb;
     public float speed;
     public float jump;
+    public GameObject swordo;
+
+    [Header("Animator")]
 
     public Animator animator;
-    public Health health;
+    public TMP_Text tmp;
+    public string run, idle, jump2, hurt;
+    [SerializeField] private SpriteRenderer sp;
+
+
+    [Header("La UI")]
+    public float vida;
+    public float medals;
+    public GameObject medal1, medal2, medal3;
+
 
    
-    public string run, idle, jump2, hurt;
-    [SerializeField]private SpriteRenderer sp;
+   
 
     private void Start()
     {
-
-        //animator = GetComponent<Animator>();
-        //sp= GetComponent<SpriteRenderer>();
+        
+       
     }
 
 
@@ -57,6 +71,19 @@ public class PlayerController : MonoBehaviour
     {
         isUp = false;
     }
+    
+    public void clickAttack()
+    {
+        isAttack = true;
+    }
+
+    public void releaseAttack()
+    {
+        isAttack = false;
+        swordo.gameObject.SetActive(false);
+    }
+
+
 
 
     private void Update()
@@ -66,7 +93,7 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(new Vector3(0, jump, 0) * Time.deltaTime);
            
         }
-       
+        tmp.text = "X  " + vida;
 
     }
     private void FixedUpdate()
@@ -98,7 +125,11 @@ public class PlayerController : MonoBehaviour
             animator.Play(jump2);
         }
 
-       
+        if (isAttack)
+        {
+            swordo.gameObject.SetActive(true);
+            animator.Play("Attack");
+        }
 
     }
 
@@ -108,7 +139,45 @@ public class PlayerController : MonoBehaviour
         if(collision.CompareTag("Enemy"))
         {
             animator.Play(hurt);
+            vida = vida - 1;
         }
+
+        if(collision.CompareTag("Health"))
+        {
+            vida = vida + 1;
+            collision.gameObject.SetActive(false);
+            
+
+        }
+
+        if (collision.CompareTag("Medal"))
+        {
+            medals = medals + 1;
+            collision.gameObject.SetActive(false);
+            switch(medals)
+            {
+                case 1:
+                medal1.gameObject.SetActive(true);
+
+                 break;
+                case 2:
+                    medal2.gameObject.SetActive(true);
+
+                    break;
+                case 3:
+                    medal3.gameObject.SetActive(true);
+
+                    break;
+
+
+            }
+
+        }
+
+    }
+    public void Attack()
+    {
+       
     }
 
 

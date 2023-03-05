@@ -9,6 +9,8 @@ public class SceneManager4 : MonoBehaviour
     public string Scene2;
     public string Scene3;
     public GameObject Pause;
+    public GameObject win;
+    public GameObject lose;
 
     public void ScenePrim()
     {
@@ -37,4 +39,15 @@ public class SceneManager4 : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    public void Win()
+    {
+        win.gameObject.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void Lose()
+    {
+        lose.gameObject.SetActive(true);
+        Time.timeScale = 0f;
+    }
 }
