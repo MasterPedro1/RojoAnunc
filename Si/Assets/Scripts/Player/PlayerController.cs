@@ -169,10 +169,15 @@ public class PlayerController : MonoBehaviour
 
                     break;
 
-
             }
 
         }
+
+        if (collision.CompareTag("Water"))
+        {
+            vida = vida - 5f;
+        }
+
 
     }
     public void Attack()

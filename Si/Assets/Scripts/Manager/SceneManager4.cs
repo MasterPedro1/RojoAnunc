@@ -11,6 +11,16 @@ public class SceneManager4 : MonoBehaviour
     public GameObject Pause;
     public GameObject win;
     public GameObject lose;
+    public PlayerController PC;
+
+    private void Update()
+    {
+        if(PC.vida <= 0)
+        {
+            lose.SetActive(true);
+            //Time.timeScale = 0;
+        }
+    }
 
     public void ScenePrim()
     {
