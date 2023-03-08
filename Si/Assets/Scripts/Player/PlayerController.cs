@@ -21,9 +21,11 @@ public class PlayerController : MonoBehaviour
     [Header("Animator")]
 
     public Animator animator;
+    public Animation anima;
     public TMP_Text tmp;
     public string run, idle, jump2, hurt;
     [SerializeField] private SpriteRenderer sp;
+    
 
 
     [Header("La UI")]
@@ -37,8 +39,8 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        
-       
+        Animator animator = GetComponent<Animator>();
+
     }
 
 
@@ -99,13 +101,24 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         if (isLeft == false && isRight == false && isUp == false)
-            animator.Play(idle);
+            //animator.Play(idle);
+
+            animator.SetBool("Idle", true);
+            animator.SetBool("Jump", false);
+            animator.SetBool("Attack", false);
+            animator.SetBool("Hurt", false);
+            animator.SetBool("Run", false);
 
         if (isLeft)
         {
             //rb.AddForce(new Vector2(-speed, 0) * Time.deltaTime);
             rb.transform.position += new Vector3(-speed, 0, 0) * Time.deltaTime;
-            animator.Play(run);
+            animator.SetBool("Jump", false);
+            animator.SetBool("Attack", false);
+            animator.SetBool("Idle", false);
+            animator.SetBool("Hurt", false);
+            animator.SetBool("Run", true);
+            //animator.Play(run);
             sp.flipX = true;
 
         }
@@ -114,7 +127,12 @@ public class PlayerController : MonoBehaviour
         {
             //rb.AddForce(new Vector2(speed, 0) * Time.deltaTime);
             rb.transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
-            animator.Play(run);
+            animator.SetBool("Jump", false);
+            animator.SetBool("Attack", false);
+            animator.SetBool("Idle", false);
+            animator.SetBool("Hurt", false);
+            animator.SetBool("Run", true);
+            //animator.Play(run);
             sp.flipX = false;
         }
 
@@ -122,13 +140,24 @@ public class PlayerController : MonoBehaviour
         {
             //rb.AddForce(new Vector2(speed, 0) * Time.deltaTime);
             rb.transform.position += new Vector3(0, speed * 2f, 0) * Time.deltaTime;
-            animator.Play(jump2);
+            animator.SetBool("Jump", true);
+            animator.SetBool("Idle", false);
+            animator.SetBool("Attack", false);
+            animator.SetBool("Run", false);
+            animator.SetBool("Hurt", false);
+            //animator.Play(jump2);
+            
         }
 
         if (isAttack)
         {
             swordo.gameObject.SetActive(true);
-            animator.Play("Attack");
+            animator.SetBool("Attack", true);
+            animator.SetBool("Idle", false);
+            animator.SetBool("Run", false);
+            animator.SetBool("Hurt", false);
+            animator.SetBool("Jump", false);
+            //animator.Play("Attack");
         }
 
     }
@@ -138,7 +167,12 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.CompareTag("Enemy"))
         {
-            animator.Play(hurt);
+            animator.SetBool("Attack", false);
+            animator.SetBool("Idle", false);
+            animator.SetBool("Run", false);
+            animator.SetBool("Hurt", true);
+            animator.SetBool("Jump", false);
+            // animator.Play(hurt);
             vida = vida - 1;
         }
 
