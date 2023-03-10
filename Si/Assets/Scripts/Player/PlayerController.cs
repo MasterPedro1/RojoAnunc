@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float jump;
     public GameObject swordo;
+    public GameObject swordo2;
 
     [Header("Animator")]
 
@@ -83,6 +84,7 @@ public class PlayerController : MonoBehaviour
     {
         isAttack = false;
         swordo.gameObject.SetActive(false);
+        swordo2.gameObject.SetActive(false);
     }
 
 
@@ -151,7 +153,14 @@ public class PlayerController : MonoBehaviour
 
         if (isAttack)
         {
-            swordo.gameObject.SetActive(true);
+
+            if(sp.flipX == false)
+            {
+                swordo.gameObject.SetActive(true);
+            }
+            else
+                swordo2.gameObject.SetActive(true);
+
             animator.SetBool("Attack", true);
             animator.SetBool("Idle", false);
             animator.SetBool("Run", false);
@@ -173,7 +182,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("Hurt", true);
             animator.SetBool("Jump", false);
             // animator.Play(hurt);
-            vida = vida - 1;
+            //vida = vida - 1;
         }
 
         if(collision.CompareTag("Health"))
@@ -209,7 +218,7 @@ public class PlayerController : MonoBehaviour
 
         if (collision.CompareTag("Water"))
         {
-            vida = vida - 5f;
+            vida = vida - 10f;
         }
 
 
