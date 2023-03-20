@@ -22,7 +22,6 @@ public class PlayerController : MonoBehaviour
     [Header("Animator")]
 
     public Animator animator;
-    public Animation anima;
     public TMP_Text tmp;
     public string run, idle, jump2, hurt;
     [SerializeField] private SpriteRenderer sp;
@@ -33,6 +32,7 @@ public class PlayerController : MonoBehaviour
     public float vida;
     public float medals;
     public GameObject medal1, medal2, medal3;
+    
 
 
    
@@ -41,7 +41,9 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         Animator animator = GetComponent<Animator>();
+       
 
+        
     }
 
 
@@ -94,7 +96,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            rb.AddForce(new Vector3(0, jump, 0) * Time.deltaTime);
+            rb.transform.position += new Vector3(0, speed * 2f, 0) * Time.deltaTime; ;
            
         }
         tmp.text = "X  " + vida;

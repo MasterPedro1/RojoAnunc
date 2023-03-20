@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class SceneManager4 : MonoBehaviour
 {
-    public string Scene1;
-    public string Scene2;
-    public string Scene3;
+    public string Menu;
+    public string Restart;
+    public string Tienda;
+    public string Next;
     public GameObject Pause;
     public GameObject win;
     public GameObject lose;
@@ -22,19 +23,24 @@ public class SceneManager4 : MonoBehaviour
         }
     }
 
-    public void ScenePrim()
+    public void MenuScene()
     {
-       SceneManager.LoadScene(Scene1);
+       SceneManager.LoadScene(Menu);
         Time.timeScale = 1f;
     }
-    public void SceneSec()
+    public void RestarScene()
     {
-        SceneManager.LoadScene(Scene2);
+        SceneManager.LoadScene(Restart);
         Time.timeScale = 1f;
     }
-    public void SceneTerc()
+    public void TiendaScene()
     {
-        SceneManager.LoadScene(Scene3);
+        SceneManager.LoadScene(Tienda);
+        Time.timeScale = 1f;
+    }
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(Next);
         Time.timeScale = 1f;
     }
 

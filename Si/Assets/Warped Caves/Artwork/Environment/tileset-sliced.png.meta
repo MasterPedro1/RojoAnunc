@@ -312,7 +312,7 @@ TextureImporter:
       213: 21300204
     second: tileset-sliced_102
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -329,6 +329,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
@@ -372,6 +373,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -2680,8 +2683,8 @@ TextureImporter:
       tileset-sliced_32: 21300064
       tileset-sliced_79: 21300158
       tileset-sliced_93: 21300186
-      tileset-sliced_35: 21300070
       tileset-sliced_102: 21300204
+      tileset-sliced_35: 21300070
       tileset-sliced_6: 21300012
       tileset-sliced_88: 21300176
       tileset-sliced_81: 21300162
@@ -2704,11 +2707,11 @@ TextureImporter:
       tileset-sliced_49: 21300098
       tileset-sliced_97: 21300194
       tileset-sliced_53: 21300106
-      tileset-sliced_9: 21300018
       tileset-sliced_23: 21300046
+      tileset-sliced_74: 21300148
       tileset-sliced_64: 21300128
       tileset-sliced_71: 21300142
-      tileset-sliced_74: 21300148
+      tileset-sliced_9: 21300018
       tileset-sliced_70: 21300140
       tileset-sliced_73: 21300146
       tileset-sliced_1: 21300002
@@ -2717,17 +2720,16 @@ TextureImporter:
       tileset-sliced_56: 21300112
       tileset-sliced_17: 21300034
       tileset-sliced_68: 21300136
-      tileset-sliced_34: 21300068
+      tileset-sliced_100: 21300200
       tileset-sliced_19: 21300038
       tileset-sliced_14: 21300028
+      tileset-sliced_34: 21300068
       tileset-sliced_80: 21300160
-      tileset-sliced_95: 21300190
       tileset-sliced_63: 21300126
       tileset-sliced_82: 21300164
-      tileset-sliced_100: 21300200
+      tileset-sliced_95: 21300190
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

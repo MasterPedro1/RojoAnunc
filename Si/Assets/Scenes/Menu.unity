@@ -595,7 +595,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1894739499}
         m_TargetAssemblyTypeName: SceneManager4, Assembly-CSharp
-        m_MethodName: SceneTerc
+        m_MethodName: TiendaScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1119,7 +1119,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1894739499}
         m_TargetAssemblyTypeName: SceneManager4, Assembly-CSharp
-        m_MethodName: SceneSec
+        m_MethodName: NextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1270,6 +1270,22 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -251441189177349617, guid: 66ef5baf6040619409d84855b1bd4772, type: 3}
+      propertyPath: Menu
+      value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: -251441189177349617, guid: 66ef5baf6040619409d84855b1bd4772, type: 3}
+      propertyPath: Next
+      value: Level1
+      objectReference: {fileID: 0}
+    - target: {fileID: -251441189177349617, guid: 66ef5baf6040619409d84855b1bd4772, type: 3}
+      propertyPath: Tienda
+      value: Tienda
+      objectReference: {fileID: 0}
+    - target: {fileID: -251441189177349617, guid: 66ef5baf6040619409d84855b1bd4772, type: 3}
+      propertyPath: Restart
+      value: Restart
+      objectReference: {fileID: 0}
     - target: {fileID: 15178972968663093, guid: 66ef5baf6040619409d84855b1bd4772, type: 3}
       propertyPath: m_Name
       value: Scenemanager
