@@ -20,5 +20,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level3.unity
     guid: e56eefa995ffc7e4490657ff1fca64ca
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: a1fcee5325a09b249b3233ce3dc5b871
+  - enabled: 1
+    path: Assets/Scenes/Monedas.unity
+    guid: e274d5056ea49644993a3e9842e1df2a
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 959b50eaaea19d543926416efdcdcea7, type: 2}

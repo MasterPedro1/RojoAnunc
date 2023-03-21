@@ -9,6 +9,7 @@ public class SceneManager4 : MonoBehaviour
     public string Restart;
     public string Tienda;
     public string Next;
+    public string Moneda;
     public GameObject Pause;
     public GameObject win;
     public GameObject lose;
@@ -41,6 +42,12 @@ public class SceneManager4 : MonoBehaviour
     public void NextLevel()
     {
         SceneManager.LoadScene(Next);
+        Time.timeScale = 1f;
+    }
+
+    public void Monedas()
+    {
+        SceneManager.LoadScene(Moneda);
         Time.timeScale = 1f;
     }
 

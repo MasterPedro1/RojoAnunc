@@ -23,19 +23,23 @@ public class PlayerController : MonoBehaviour
 
     public Animator animator;
     public TMP_Text tmp;
+    public TMP_Text coinsT;
     public string run, idle, jump2, hurt;
     [SerializeField] private SpriteRenderer sp;
-    
+
 
 
     [Header("La UI")]
     public float vida;
     public float medals;
+    public float coins;
     public GameObject medal1, medal2, medal3;
-    
 
+    [Header("Audio")]
 
-   
+    public AudioClip coin;
+    public AudioClip medal;
+    public AudioSource source;
    
 
     private void Start()
@@ -100,6 +104,7 @@ public class PlayerController : MonoBehaviour
            
         }
         tmp.text = "X  " + vida;
+        coinsT.text = "X " + coins;
 
     }
     private void FixedUpdate()
@@ -176,7 +181,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Enemy"))
+        if (collision.CompareTag("Enemy"))
         {
             animator.SetBool("Attack", false);
             animator.SetBool("Idle", false);
@@ -187,24 +192,25 @@ public class PlayerController : MonoBehaviour
             //vida = vida - 1;
         }
 
-        if(collision.CompareTag("Health"))
+        if (collision.CompareTag("Health"))
         {
             vida = vida + 1;
             collision.gameObject.SetActive(false);
-            
+
 
         }
 
         if (collision.CompareTag("Medal"))
         {
             medals = medals + 1;
+            source.PlayOneShot(medal);
             collision.gameObject.SetActive(false);
-            switch(medals)
+            switch (medals)
             {
                 case 1:
-                medal1.gameObject.SetActive(true);
+                    medal1.gameObject.SetActive(true);
 
-                 break;
+                    break;
                 case 2:
                     medal2.gameObject.SetActive(true);
 
@@ -223,13 +229,15 @@ public class PlayerController : MonoBehaviour
             vida = vida - 10f;
         }
 
+        if (collision.CompareTag("Coins"))
+        {
+            coins = coins + 1;
+            source.PlayOneShot(coin);
+            collision.gameObject.SetActive(false);
+        }
 
     }
-    public void Attack()
-    {
-       
-    }
-
+   
 
 
 }
