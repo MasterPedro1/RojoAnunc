@@ -6,12 +6,14 @@ using System;
 
 public class SaveSystem : MonoBehaviour
 {
+    public GameData[] datas;
+    public string json;
     // Start is called before the first frame update
     void Start()
     {
         
-        string json = File.ReadAllText(Application.streamingAssetsPath + "/GameData.json");
-        GameData[] datas = JsonHelper.FromJson<GameData>(json);
+        json = File.ReadAllText(Application.streamingAssetsPath + "/GameData.json");
+        datas = JsonHelper.FromJson<GameData>(json);
     }
 
     // Update is called once per frame

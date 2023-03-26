@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public bool isRight = false;
     public bool isUp = false;
     public bool isAttack = false;
+    
 
     public Rigidbody2D rb;
     public float speed;
@@ -23,7 +24,6 @@ public class PlayerController : MonoBehaviour
 
     public Animator animator;
     public TMP_Text tmp;
-    public TMP_Text coinsT;
     public string run, idle, jump2, hurt;
     [SerializeField] private SpriteRenderer sp;
 
@@ -32,7 +32,6 @@ public class PlayerController : MonoBehaviour
     [Header("La UI")]
     public float vida;
     public float medals;
-    public float coins;
     public GameObject medal1, medal2, medal3;
 
     [Header("Audio")]
@@ -104,7 +103,7 @@ public class PlayerController : MonoBehaviour
            
         }
         tmp.text = "X  " + vida;
-        coinsT.text = "X " + coins;
+        
 
     }
     private void FixedUpdate()
@@ -231,7 +230,7 @@ public class PlayerController : MonoBehaviour
 
         if (collision.CompareTag("Coins"))
         {
-            coins = coins + 1;
+            
             source.PlayOneShot(coin);
             collision.gameObject.SetActive(false);
         }

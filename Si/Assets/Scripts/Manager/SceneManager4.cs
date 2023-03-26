@@ -7,13 +7,14 @@ public class SceneManager4 : MonoBehaviour
 {
     public string Menu;
     public string Restart;
-    public string Tienda;
     public string Next;
     public string Moneda;
     public GameObject Pause;
     public GameObject win;
     public GameObject lose;
     public PlayerController PC;
+    public GameObject Tienda;
+    public GameObject _Menu;
 
     private void Update()
     {
@@ -36,7 +37,17 @@ public class SceneManager4 : MonoBehaviour
     }
     public void TiendaScene()
     {
-        SceneManager.LoadScene(Tienda);
+        Tienda.gameObject.SetActive(true);
+        _Menu.gameObject.SetActive(false);
+
+        Time.timeScale = 1f;
+    }
+
+    public void MenuG()
+    {
+        Tienda.gameObject.SetActive(false);
+        _Menu.gameObject.SetActive(true);
+
         Time.timeScale = 1f;
     }
     public void NextLevel()

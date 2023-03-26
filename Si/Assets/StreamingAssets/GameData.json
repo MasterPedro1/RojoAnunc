@@ -2,910 +2,908 @@
     "Coleccionables": [
         {
             "id": 0,
-            "descripcion": "Anfibolita",
-            "yasalio": false
-          },
-          {
+            "description": "",
+            "yasalio": true
+        },
+        {
             "id": 1,
-            "descripcion": "Brecha",
-            "yasalio": false
-          },
-          {
+            "description": "",
+            "yasalio": true
+        },
+        {
             "id": 2,
-            "descripcion": "Calcarenita",
-            "yasalio": false
-          },
-          {
+            "description": "",
+            "yasalio": true
+        },
+        {
             "id": 3,
-            "descripcion": "Dacita",
-            "yasalio": false
-          },
-          {
+            "description": "",
+            "yasalio": true
+        },
+        {
             "id": 4,
-            "descripcion": "Arenisca",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 5,
-            "descripcion": "Basalto",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 6,
-            "descripcion": "Conglomerado",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 7,
-            "descripcion": "Diorita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 8,
-            "descripcion": "Brecha",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 9,
-            "descripcion": "Esquisto",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 10,
-            "descripcion": "Filita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 11,
-            "descripcion": "Granito",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 12,
-            "descripcion": "Gneis",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 13,
-            "descripcion": "Ardosia",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 14,
-            "descripcion": "Caliza",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 15,
-            "descripcion": "Diabasa",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 16,
-            "descripcion": "Cuarzo",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 17,
-            "descripcion": "Brecha",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 18,
-            "descripcion": "Diorita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 19,
-            "descripcion": "Brecha",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 20,
-            "descripcion": "Antracita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 21,
-            "descripcion": "Cuarzita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 22,
-            "descripcion": "Dunita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 23,
-            "descripcion": "Brecha",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 24,
-            "descripcion": "Andesita",
+            "description": "",
             "yasalio": false
-          },
-
-          {
+        },
+        {
             "id": 25,
-            "descripcion": "Epidota",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 26,
-            "descripcion": "Jade",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 27,
-            "descripcion": "Kunzita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 28,
-            "descripcion": "Larimar",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 29,
-            "descripcion": "Malaquita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 30,
-            "descripcion": "Nefrita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 31,
-            "descripcion": "Olivino",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 32,
-            "descripcion": "Piropo",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 33,
-            "descripcion": "Quarzo",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 34,
-            "descripcion": "Rutilo",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 35,
-            "descripcion": "Serpentina",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 36,
-            "descripcion": "Turmalina",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 37,
-            "descripcion": "Uvarovita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 38,
-            "descripcion": "Variscita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 39,
-            "descripcion": "Wulfenita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 40,
-            "descripcion": "Xenotima",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 41,
-            "descripcion": "Yacimientos epitermales",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 42,
-            "descripcion": "Zircón",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 43,
-            "descripcion": "Antracita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 44,
-            "descripcion": "Brecha",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 45,
-            "descripcion": "Caliza",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 46,
-            "descripcion": "Dolomita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 47,
-            "descripcion": "Esquisto",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 48,
-            "descripcion": "Filita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 49,
-            "descripcion": "Gneis",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 50,
-            "descripcion": "Obsidiana",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 51,
-            "descripcion": "Piedra pómez",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 52,
-            "descripcion": "Quartzita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 53,
-            "descripcion": "Riolita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 54,
-            "descripcion": "Sienita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 55,
-            "descripcion": "Travertino",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 56,
-            "descripcion": "Oolita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 57,
-            "descripcion": "Porcelanita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 58,
-            "descripcion": "Quebracho",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 59,
-            "descripcion": "Rocas sedimentarias",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 60,
-            "descripcion": "Serpentinita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 61,
-            "descripcion": "Silex",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 62,
-            "descripcion": "Oro",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 63,
-            "descripcion": "Plata",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 64,
-            "descripcion": "Quicksilver",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 65,
-            "descripcion": "Rutílico",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 66,
-            "descripcion": "Saborita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 67,
-            "descripcion": "Sárdica",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 68,
-            "descripcion": "Taconita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 69,
-            "descripcion": "Urano",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 70,
-            "descripcion": "Variscita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 71,
-            "descripcion": "Wulfenita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 72,
-            "descripcion": "Xenotima",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 73,
-            "descripcion": "Yodo",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 74,
-            "descripcion": "Zinc",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 75,
-            "descripcion": "Roble",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 76,
-            "descripcion": "Pino",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 77,
-            "descripcion": "Cerezo",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 78,
-            "descripcion": "Nogal",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 79,
-            "descripcion": "Sicomoro",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 80,
-            "descripcion": "Abeto",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 81,
-            "descripcion": "Aliso",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 82,
-            "descripcion": "Avellano",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 83,
-            "descripcion": "Castaño",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 84,
-            "descripcion": "Cedro",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 85,
-            "descripcion": "Haya",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 86,
-            "descripcion": "Olivo",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 87,
-            "descripcion": "Almendro",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 88,
-            "descripcion": "Fresno",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 89,
-            "descripcion": "Níspero",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 90,
-            "descripcion": "Teca",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 91,
-            "descripcion": "Ébano",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 92,
-            "descripcion": "Abedul",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 93,
-            "descripcion": "Álamo",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 94,
-            "descripcion": "Caoba",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 95,
-            "descripcion": "Ciprés",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 96,
-            "descripcion": "Mango",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 97,
-            "descripcion": "Palisandro",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 98,
-            "descripcion": "Palma",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 99,
-            "descripcion": "Tilo",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 100,
-            "descripcion": "Cuarzo",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 101,
-            "descripcion": "Feldespato",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 102,
-            "descripcion": "Mica",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 103,
-            "descripcion": "Turmalina",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 104,
-            "descripcion": "Calcita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 105,
-            "descripcion": "Halita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 106,
-            "descripcion": "Grafito",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 107,
-            "descripcion": "Apatita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 108,
-            "descripcion": "Crisocola",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 109,
-            "descripcion": "Azufre",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 110,
-            "descripcion": "Magnetita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 111,
-            "descripcion": "Hematita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 112,
-            "descripcion": "Galena",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 113,
-            "descripcion": "Barita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 114,
-            "descripcion": "Fluorita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 115,
-            "descripcion": "Aragonita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 116,
-            "descripcion": "Cristobalita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 117,
-            "descripcion": "Zeolita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 118,
-            "descripcion": "Dolomita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 119,
-            "descripcion": "Cianita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 120,
-            "descripcion": "Ópalo",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 121,
-            "descripcion": "Aragonito",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 122,
-            "descripcion": "Pirita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 123,
-            "descripcion": "Baritina",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 124,
-            "descripcion": "Molibdenita",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 125,
-            "descripcion": "Almendra",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 126,
-            "descripcion": "Nuez de macadamia",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 127,
-            "descripcion": "Pistacho",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 128,
-            "descripcion": "Castaña",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 129,
-            "descripcion": "Anacardo",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 130,
-            "descripcion": "Avellana",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 131,
-            "descripcion": "Nuez de nogal",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 132,
-            "descripcion": "Pepita de calabaza",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 133,
-            "descripcion": "Piñón",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 134,
-            "descripcion": "Cacahuete",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 135,
-            "descripcion": "Almendra de palma",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 136,
-            "descripcion": "Nuez de brasil",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 137,
-            "descripcion": "Coco",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 138,
-            "descripcion": "Semilla de girasol",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 139,
-            "descripcion": "Semilla de sésamo",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 140,
-            "descripcion": "Nuez de pino",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 141,
-            "descripcion": "Avellana de brasil",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 142,
-            "descripcion": "Nuez de macadamia australiana",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 143,
-            "descripcion": "Pistacho de Sicilia",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 144,
-            "descripcion": "Castaña europea",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 145,
-            "descripcion": "Anacardo de la India",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 146,
-            "descripcion": "Nuez de nogal negro",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 147,
-            "descripcion": "Pepita de uva",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 148,
-            "descripcion": "Piñón español",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 149,
-            "descripcion": "Cacahuete de Valencia",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 150,
-            "descripcion": "Sushi",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 151,
-            "descripcion": "Tacos al pastor",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 152,
-            "descripcion": "Pasta carbonara",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 153,
-            "descripcion": "Hamburguesa",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 154,
-            "descripcion": "Sopa de pollo",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 155,
-            "descripcion": "Ensalada Caesar",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 156,
-            "descripcion": "Churrasco",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 157,
-            "descripcion": "Ceviche",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 158,
-            "descripcion": "Pad Thai",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 159,
-            "descripcion": "Canelones",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 160,
-            "descripcion": "Arroz con pollo",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 161,
-            "descripcion": "Lasagna",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 162,
-            "descripcion": "Pescado frito",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 163,
-            "descripcion": "Tostadas de ceviche",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 164,
-            "descripcion": "Moussaka",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 165,
-            "descripcion": "Goulash",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 166,
-            "descripcion": "Tarta de manzana",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 167,
-            "descripcion": "Risotto",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 168,
-            "descripcion": "Salmón a la plancha",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 169,
-            "descripcion": "Pollo al horno",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 170,
-            "descripcion": "Sopa de tomate",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 171,
-            "descripcion": "Papas bravas",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 172,
-            "descripcion": "Paella",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 173,
-            "descripcion": "Angus",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 174,
-            "descripcion": "Hereford",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 175,
-            "descripcion": "Charolais",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 176,
-            "descripcion": "Limousin",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 177,
-            "descripcion": "Blanco belga",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 178,
-            "descripcion": "Simmental",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 179,
-            "descripcion": "Fleckvieh",
+            "description": "",
             "yasalio": false
-          },
-          {
+        },
+        {
             "id": 180,
-            "descripcion": "Parda Alpina",
+            "description": "",
             "yasalio": false
-          }
-        
+        }
     ]
 }
