@@ -5,10 +5,9 @@ using System.IO;
 
 public class ColeCole : MonoBehaviour
 {
-    public int id = 0;
-    public int idGO = 0;
-    public List<GameObject> gameObjects = new List<GameObject>();
+    public int id;
     public SaveSystem sv;
+    public GameObject go;
 
 
     private void Start()
@@ -18,17 +17,12 @@ public class ColeCole : MonoBehaviour
     }
     private void Update()
     {
-
-        for ( id = 0; id <= 180; id++)
+        
+        if(sv.datas[id].yasalio == true)
         {
-            for ( idGO = 0; idGO <= 180; idGO++)
-            {
-                if (sv.datas[id].yasalio == true)
-                {
-                    gameObjects[idGO].SetActive(true);
-                }
-            }
+            go.SetActive(true);
         }
+        
 
     }
 }

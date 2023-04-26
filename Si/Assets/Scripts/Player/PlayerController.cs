@@ -31,22 +31,23 @@ public class PlayerController : MonoBehaviour
 
     [Header("La UI")]
     public float vida;
-    public float medals;
+    public int medals;
+    private int totalmedals;
     public GameObject medal1, medal2, medal3;
 
     [Header("Audio")]
 
     public AudioClip coin;
     public AudioClip medal;
+    public AudioClip atttack;
     public AudioSource source;
    
 
     private void Start()
     {
         Animator animator = GetComponent<Animator>();
-       
+        totalmedals = PlayerPrefs.GetInt("Medallas", 0);
 
-        
     }
 
 
@@ -83,6 +84,7 @@ public class PlayerController : MonoBehaviour
     public void clickAttack()
     {
         isAttack = true;
+        source.PlayOneShot(atttack);
     }
 
     public void releaseAttack()
@@ -103,11 +105,12 @@ public class PlayerController : MonoBehaviour
            
         }
         tmp.text = "X  " + vida;
-        
+        PlayerPrefs.SetInt("Medallas", totalmedals);
 
     }
     private void FixedUpdate()
     {
+
         if (isLeft == false && isRight == false && isUp == false)
             //animator.Play(idle);
 
@@ -203,7 +206,9 @@ public class PlayerController : MonoBehaviour
         {
             medals = medals + 1;
             source.PlayOneShot(medal);
-            collision.gameObject.SetActive(false);
+            totalmedals = totalmedals + 1;
+
+            Destroy(collision.gameObject);
             switch (medals)
             {
                 case 1:
@@ -234,6 +239,7 @@ public class PlayerController : MonoBehaviour
             source.PlayOneShot(coin);
             collision.gameObject.SetActive(false);
         }
+
 
     }
    

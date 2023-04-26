@@ -7,7 +7,14 @@ public class ID : MonoBehaviour
 {
     public SaveSystem save;
     public int idValue;
-    
+
+    private void Update()
+    {
+        if(save.datas[idValue].yasalio == true)
+        {
+            gameObject.SetActive(false);
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

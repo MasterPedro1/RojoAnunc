@@ -177,7 +177,6 @@ MonoBehaviour:
   swordo2: {fileID: 645849637873663979}
   animator: {fileID: 645849637038113049}
   tmp: {fileID: 0}
-  coinsT: {fileID: 0}
   run: Run
   idle: Idle
   jump2: Jump
@@ -185,11 +184,11 @@ MonoBehaviour:
   sp: {fileID: 645849637038113045}
   vida: 5
   medals: 0
-  coins: 0
   medal1: {fileID: 0}
   medal2: {fileID: 0}
   medal3: {fileID: 0}
   coin: {fileID: 8300000, guid: c5cb2ac29e89dbf43a9b644caaad45e6, type: 3}
+  medal: {fileID: 8300000, guid: ba39bf8baf6d13046889b2d64822381a, type: 3}
   source: {fileID: 4188170277641170616}
 --- !u!114 &645849636914137506
 MonoBehaviour:

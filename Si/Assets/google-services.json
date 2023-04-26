@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "48251614424",
+    "project_id": "in-fuga-dalla-grota",
+    "storage_bucket": "in-fuga-dalla-grota.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48251614424:android:3be0d602735e53aa48d3ad",
+        "android_client_info": {
+          "package_name": "com.PedreCompany.InFugaDallaGrota"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48251614424-ovna1gagmttlvvkde6osjkudli1dcijp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9ngFZX-kyhzVmZworAUNvNWsuRMxmA30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48251614424-ovna1gagmttlvvkde6osjkudli1dcijp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

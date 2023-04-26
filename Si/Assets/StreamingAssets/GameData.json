@@ -3,22 +3,22 @@
         {
             "id": 0,
             "description": "",
-            "yasalio": true
+            "yasalio": false
         },
         {
             "id": 1,
             "description": "",
-            "yasalio": true
+            "yasalio": false
         },
         {
             "id": 2,
             "description": "",
-            "yasalio": true
+            "yasalio": false
         },
         {
             "id": 3,
             "description": "",
-            "yasalio": true
+            "yasalio": false
         },
         {
             "id": 4,
@@ -897,11 +897,6 @@
         },
         {
             "id": 179,
-            "description": "",
-            "yasalio": false
-        },
-        {
-            "id": 180,
             "description": "",
             "yasalio": false
         }

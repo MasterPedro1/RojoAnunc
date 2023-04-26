@@ -15,29 +15,51 @@ public class SceneManager4 : MonoBehaviour
     public PlayerController PC;
     public GameObject Tienda;
     public GameObject _Menu;
+    public GameObject Player;
 
     private void Update()
     {
-        if(PC.vida <= 0)
+        try 
         {
+            if (PC.vida <= 0)
             lose.SetActive(true);
-            //Time.timeScale = 0;
+           
         }
+        catch { }
     }
 
     public void MenuScene()
     {
-       SceneManager.LoadScene(Menu);
+       SceneManager.LoadScene(Menu, LoadSceneMode.Single);
         Time.timeScale = 1f;
     }
     public void RestarScene()
     {
-        SceneManager.LoadScene(Restart);
+        SceneManager.LoadScene(Restart, LoadSceneMode.Single);
         Time.timeScale = 1f;
     }
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(Next, LoadSceneMode.Single);
+        Time.timeScale = 1f;
+    }
+
+    public void Monedas()
+    {
+        SceneManager.LoadScene(Moneda, LoadSceneMode.Single);
+        Time.timeScale = 1f;
+    }
+
     public void TiendaScene()
     {
         Tienda.gameObject.SetActive(true);
+        _Menu.gameObject.SetActive(false);
+
+        Time.timeScale = 1f;
+
+    }public void PlayerScene()
+    {
+        Player.gameObject.SetActive(true);
         _Menu.gameObject.SetActive(false);
 
         Time.timeScale = 1f;
@@ -45,20 +67,10 @@ public class SceneManager4 : MonoBehaviour
 
     public void MenuG()
     {
+        Player.gameObject.SetActive(false);
         Tienda.gameObject.SetActive(false);
         _Menu.gameObject.SetActive(true);
 
-        Time.timeScale = 1f;
-    }
-    public void NextLevel()
-    {
-        SceneManager.LoadScene(Next);
-        Time.timeScale = 1f;
-    }
-
-    public void Monedas()
-    {
-        SceneManager.LoadScene(Moneda);
         Time.timeScale = 1f;
     }
 
