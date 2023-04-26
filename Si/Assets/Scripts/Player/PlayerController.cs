@@ -19,12 +19,16 @@ public class PlayerController : MonoBehaviour
     public float jump;
     public GameObject swordo;
     public GameObject swordo2;
+    public LogrosManager lm;
+
+    private int jumps;
 
     [Header("Animator")]
 
     public Animator animator;
     public TMP_Text tmp;
     public string run, idle, jump2, hurt;
+
     [SerializeField] private SpriteRenderer sp;
 
 
@@ -32,8 +36,9 @@ public class PlayerController : MonoBehaviour
     [Header("La UI")]
     public float vida;
     public int medals;
-    private int totalmedals;
     public GameObject medal1, medal2, medal3;
+
+    private int totalmedals;
 
     [Header("Audio")]
 
@@ -47,6 +52,7 @@ public class PlayerController : MonoBehaviour
     {
         Animator animator = GetComponent<Animator>();
         totalmedals = PlayerPrefs.GetInt("Medallas", 0);
+        jumps = PlayerPrefs.GetInt("Jump", 0);
 
     }
 
@@ -74,6 +80,7 @@ public class PlayerController : MonoBehaviour
     public void clickUp()
     {
         isUp = true;
+        jumps = jumps + 1;
     }
 
     public void releaseUp()
@@ -105,7 +112,43 @@ public class PlayerController : MonoBehaviour
            
         }
         tmp.text = "X  " + vida;
+
         PlayerPrefs.SetInt("Medallas", totalmedals);
+        PlayerPrefs.SetInt("Jump", jumps);
+
+        switch (jumps) 
+        {
+            case 30:
+                lm.LogrosId(GPGSIds.achievement_noob_jumper);
+                break;
+            case 40:
+                lm.LogrosId(GPGSIds.achievement_normal_jumper);
+                break;
+            case 50:
+                lm.LogrosId(GPGSIds.achievement_advanced_jumper);
+                break;
+            case 70:
+                lm.LogrosId(GPGSIds.achievement_expert_jumper);
+                break;
+            case 100:
+                lm.LogrosId(GPGSIds.achievement_insane_jumper);
+                break;
+
+        }
+
+        switch (totalmedals)
+        {
+            case 3:
+                lm.LogrosId(GPGSIds.achievement_noob_medal_collector);
+                break;
+            case 6:
+                lm.LogrosId(GPGSIds.achievement_advance_medal_collector);
+                break;
+            case 9:
+                lm.LogrosId(GPGSIds.achievement_insane_medal_collector);
+                break;
+
+        }
 
     }
     private void FixedUpdate()

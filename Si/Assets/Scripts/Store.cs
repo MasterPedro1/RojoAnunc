@@ -43,8 +43,6 @@ public class Store : MonoBehaviour
     {
         _money = PlayerPrefs.GetInt("Medallas", 0);
 
-       
-        
     }
 
     private void Update()
@@ -53,6 +51,7 @@ public class Store : MonoBehaviour
         blackValue = PlayerPrefs.GetInt("BlackID", 0);
         redValue = PlayerPrefs.GetInt("RedID", 0);
         playerid = PlayerPrefs.GetInt("PlayerId", 0);
+
 
         if (greenValue == 1)
         {
