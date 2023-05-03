@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public LogrosManager lm;
 
     private int jumps;
+    private int water;
 
     [Header("Animator")]
 
@@ -53,6 +54,8 @@ public class PlayerController : MonoBehaviour
         Animator animator = GetComponent<Animator>();
         totalmedals = PlayerPrefs.GetInt("Medallas", 0);
         jumps = PlayerPrefs.GetInt("Jump", 0);
+        GetComponent<LogrosManager>();
+        
 
     }
 
@@ -274,6 +277,8 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("Water"))
         {
             vida = vida - 10f;
+            lm.LogrosId(GPGSIds.achievement_you_need_swimming_lessons);
+
         }
 
         if (collision.CompareTag("Coins"))

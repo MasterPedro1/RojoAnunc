@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 645849636914137502}
   - component: {fileID: 645849636914137497}
   - component: {fileID: 645849636914137501}
-  - component: {fileID: 645849636914137506}
+  - component: {fileID: 3978598062761294551}
   m_Layer: 0
   m_Name: Jugador
   m_TagString: Player
@@ -175,6 +175,7 @@ MonoBehaviour:
   jump: 1000
   swordo: {fileID: 645849636394670230}
   swordo2: {fileID: 645849637873663979}
+  lm: {fileID: 0}
   animator: {fileID: 645849637038113049}
   tmp: {fileID: 0}
   run: Run
@@ -189,8 +190,9 @@ MonoBehaviour:
   medal3: {fileID: 0}
   coin: {fileID: 8300000, guid: c5cb2ac29e89dbf43a9b644caaad45e6, type: 3}
   medal: {fileID: 8300000, guid: ba39bf8baf6d13046889b2d64822381a, type: 3}
+  atttack: {fileID: 0}
   source: {fileID: 4188170277641170616}
---- !u!114 &645849636914137506
+--- !u!114 &3978598062761294551
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,14 +201,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 645849636914137496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c22a54ee1943db4ebb18cd2fb69c91b, type: 3}
+  m_Script: {fileID: 11500000, guid: 52520d211564b524bb07ce47efc0846e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 645849636914137497}
-  push: 150
-  player: {fileID: 645849636914137501}
-  sp: {fileID: 645849637038113045}
-  IsHurt: 0
 --- !u!1 &645849637038113044
 GameObject:
   m_ObjectHideFlags: 0

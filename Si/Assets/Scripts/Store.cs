@@ -37,12 +37,14 @@ public class Store : MonoBehaviour
     private int redValue;
     private int playerid;
 
-    
+    public LogrosManager lm;
+
 
     void Start()
     {
         _money = PlayerPrefs.GetInt("Medallas", 0);
 
+        GetComponent<LogrosManager>();
     }
 
     private void Update()
@@ -124,11 +126,11 @@ public class Store : MonoBehaviour
                 byegreen.SetActive(false);
                 greenValue = greenValue + 1;
                 PlayerPrefs.SetInt("GreenID", greenValue);
+                lm.LogrosId(GPGSIds.achievement_all_the_green_you_wannabe);
             }
             else
             nol.PlayOneShot(nel);
-    
-            
+
         }
     }
 
@@ -147,6 +149,7 @@ public class Store : MonoBehaviour
                 byeblack.SetActive(false);
                 blackValue = blackValue + 1;
                 PlayerPrefs.SetInt("BlackID", blackValue);
+                lm.LogrosId(GPGSIds.achievement_black_as_your_soul);
             }
             else
                 nol.PlayOneShot(nel);
@@ -171,6 +174,7 @@ public class Store : MonoBehaviour
                 byered.SetActive(false);
                 redValue = redValue + 1;
                 PlayerPrefs.SetInt("RedID", redValue);
+                lm.LogrosId(GPGSIds.achievement_fire_man);
             }
             else
                 nol.PlayOneShot(nel);

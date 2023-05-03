@@ -62414,7 +62414,7 @@ PrefabInstance:
       objectReference: {fileID: 295845201}
     - target: {fileID: 645849636914137501, guid: 9d65dfb8897cfa04caffe1d36d355524, type: 3}
       propertyPath: vida
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 645849636914137501, guid: 9d65dfb8897cfa04caffe1d36d355524, type: 3}
       propertyPath: medal
